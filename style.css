@@ -1,0 +1,317 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    text-decoration: none;  
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: 'montserrat', Arial, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+   background-image: url("img/fundo.png");  
+}
+.container {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    justify-content: space-between
+}
+.containerbaixo{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+.menu {
+    background-color: #ffffff;
+    padding: 0 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.div
+.menu-container {
+    max-width: 1100px;
+    min-height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.menu-links a:hover {
+    background-color: #28669e;
+}
+
+.menu-links a:focus-visible,
+.logo:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+/* ÁREAS DE CONTEÚDO */
+section {
+   padding: 2.7rem 0
+}
+
+hr {
+    max-width: 900px;
+    margin: 25px auto;
+    border: 0;
+    border-top: 1px solid #dce3eb;
+}
+
+/* TÍTULOS */
+h1 {
+    color: #174a7e;
+    margin-top: 0;
+}
+section.h2{
+    margin-top: 0;
+}
+h2 {
+    color: #1769aa;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5edf5;
+}
+
+h3 {
+    margin-top: 10px;
+    color: #37474f;
+    aliegn-items: center;
+    margin: -3px 2px -1px 50px;
+}
+
+/* TEXTOS E CÓDIGOS */
+p {
+    margin: 12px 0;
+}
+
+code {
+    padding: 3px 6px;
+    border-radius: 4px;
+    background-color: #edf2f7;
+    color: #8e2855;
+}
+
+/* LINKS */
+a {
+    color: #1769aa;
+    font-weight: bold;
+}
+
+.menu a {
+    color: rgb(10, 10, 10);
+}
+
+/* CAMPOS DOS FORMULÁRIOS */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 6px 0 15px;
+    padding: 11px;
+    font: inherit;
+    border: 1px solid #b8c5d3;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+input:focus {
+    outline: 2px solid #90caf9;
+    border-color: #1769aa;
+}
+
+/* FORMULÁRIO DE JOGADORES */
+#formJogador {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    align-items: end;
+}
+
+#formJogador > div {
+    min-width: 0;
+}
+
+#formJogador input {
+    max-width: none;
+}
+
+#formJogador button {
+    grid-column: 1 / -1;
+    justify-self: start;
+}
+
+/* BOTÕES */
+button {
+    margin: 6px 5px 6px 0;
+    padding: 10px 16px;
+    font: inherit;
+    font-weight: bold;
+    color: white;
+    background-color: #1769aa;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #104d80;
+}
+
+button:focus-visible {
+    outline: 3px solid #90caf9;
+    outline-offset: 3px;
+}
+
+/* MENSAGENS DO JAVASCRIPT */
+.resultado {
+    min-height: 45px;
+    padding: 12px;
+    background-color: #edf5fc;
+    border-left: 4px solid #1769aa;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
+}
+
+/* CARTÕES DOS JOGADORES */
+#listaJogadores > div {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f7f9fc;
+    border: 1px solid #dce3eb;
+    border-left: 5px solid #2e7d32;
+    border-radius: 7px;
+}
+
+#listaJogadores h4 {
+    margin: 0 0 8px;
+    color: #2e7d32;
+    font-size: 1.2rem;
+}
+
+#listaJogadores p {
+    margin: 4px 0;
+}
+img{
+    width: 10%;
+}
+.diferenciais .card img{
+    width: 100%;
+}
+.diferenciais .card{
+    width: 30%;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: white;
+   
+}
+.diferenciais .container {
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       background-color: #2454A0;
+}
+.diferenciais .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+}
+.diferenciais .containerbaixo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+.main-imagem .div .fundo{
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+}
+.div.azul
+{
+    background-color: #2454A0;
+    padding-bottom: 20px;
+}
+nav.menu .menu-container .menu-links li a{
+    color: rgb(2, 2, 2);
+    font-weight: bold;
+    aling-content: space-evenly;
+}
+/* AJUSTES PARA TABLETS E CELULARES */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .menu {
+        padding: 12px 16px;
+    }
+
+    .menu-container {
+        justify-content: center;
+    }
+
+    .menu-links {
+        justify-content: center;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    #formJogador {
+        grid-template-columns: 1fr;
+    }
+
+    #formJogador button {
+        grid-column: auto;
+        justify-self: stretch;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
